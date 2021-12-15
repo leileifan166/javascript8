@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myjs.js"></script>
+</head>
+<body>
+    <div>123456</div>
+    <button>显示当前系统时间</button>
+    <div>某个时间</div>
+    <script>
+    var div = document.querySelector('div');
+    div.onclick = function(){
+    console.log('我被选中了');
+    }
+    var btn = document.querySelector('button');
+    var div = document.querySelector('div');
+    btn.onclick = function(){
+        div.innerText = '2019-6-6';
+    }
+
+    var num = 100;
+    var num = 200;
+    alert(num);
+
+    var year = prompt('年を入力してくだい');
+    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+        alert('今年はうるお年ですね');
+    }
+
+    
+    
+    
+
+     for(j = 1; j < 10; j++){
+        for(i = 1; i < 10; i++){
+        document.write('* ');
+    } 
+    document.write('</br>');
+    
+    }
+    function fn(abc){
+        console.log('我是一个叫做fn的函数');
+    }
+    fn('实际参数');
+    function age(a,b){
+        console.log(a + b);
+    }
+    age(2,4);
+    //创建一个对象
+    var obj = {
+        a:10,
+        b:true,
+        c:'hello world'
+    }
+    //增 删 改 查
+    var abj = {}
+    console.log(abj);
+    abj.name = '小灰狼';
+    abj.age = 18;
+    abj['year'] = 2020;
+    console.log(abj);
+    </script>
+    <script>
+        document.write("<h1>hellow,world</h1>");
+    </script>
+    
+</body>
+</html>
